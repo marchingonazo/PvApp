@@ -10,7 +10,6 @@
 //using Android.Views;
 //using Android.Widget;
 using System.IO;
-using PvApp.Interfaces;
 
 [assembly: Xamarin.Forms.Dependency(typeof(GasApp.Droid.Implementations.PathService))]
 namespace PvApp.Droid.Implementations
