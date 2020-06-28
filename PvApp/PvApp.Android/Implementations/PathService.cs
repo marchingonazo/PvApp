@@ -1,20 +1,11 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-
-//using Android.App;
-//using Android.Content;
-//using Android.OS;
-//using Android.Runtime;
-//using Android.Views;
-//using Android.Widget;
+﻿using System;
+using PvApp.Interfaces;
 using System.IO;
 
-[assembly: Xamarin.Forms.Dependency(typeof(GasApp.Droid.Implementations.PathService))]
+[assembly: Xamarin.Forms.Dependency(typeof(PvApp.Droid.Implementations.PathService))]
 namespace PvApp.Droid.Implementations
 {
-    public class PathService : IpathServices
+    public class PathService : IPathService
     {
         public string GetDataBasePath()
         {

@@ -3,6 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PvApp.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:Key="Etiqueta" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Piedra-Regular.ttf#Piedra"/>
+                <On Platform="iOS" Value="Piedra-Regular"/>
+            </OnPlatform>           
+
+            <OnPlatform x:Key="Boton" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="Piedra-Regular"/>                
+                <On Platform="Android" Value="Piedra-Regular.ttf#Piedra"/>
+            </OnPlatform>           
+        </ResourceDictionary>
 
     </Application.Resources>
 </Application>
